@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Funnel Display', sans-serif;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -26,6 +25,24 @@ a {
     display: block;
 }
 
+h1 {
+    text-align: center;
+}
+
+
+/* GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
 /* CARD */
 
 .card {
@@ -33,7 +50,7 @@ a {
     flex-direction: column;
     border-radius: 1rem;
     overflow: hidden;
-    max-width: 400px;
+    max-width: 350px;
     background-color: rgb(26, 26, 43);
 }
 
@@ -42,6 +59,11 @@ a {
 .header {
     display: flex;
     justify-content: center;
+}
+
+.productImg {
+    width: 100%;
+    max-width: 350px;
 }
 
 /* MAIN */
@@ -54,7 +76,7 @@ a {
 }
 
 h2 {
-    text-align: left;
+    text-align: center;
     color: rgb(224, 42, 42);
     font-size: 2.25rem;
     padding-bottom: 0.5rem;
