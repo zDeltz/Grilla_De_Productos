@@ -105,3 +105,22 @@ footer {
     padding: 0.5rem;
     border-radius: 1rem;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Tablets de 768px */
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Smartphone de 425px */
+
+@media screen and (max-width: 425px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
